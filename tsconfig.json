@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "composite": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "types": [
+      "bun-types" // add Bun global
+    ],
+    "paths": {
+      "@interface": ["./interface.ts"],
+      "@init": ["./btree/init.ts"],
+      "@split": ["./btree/split.ts"],
+      "@find": ["./btree/find.ts"],
+      "@insert": ["./btree/insert.ts"]
+    }
+  }
+}
